@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Assests/images/logo.jpg">
+    <title>Phone Shop</title>
+    <link rel="stylesheet" href="Assests/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assests/css/shop.css" />
+    <script type="module">
+      import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+    </script>
+</head>
+<body>
+  <header  >
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container nopadding nomargin" >
+            <img src="Assests/images/logo.jpg" alt="fake logo" style="height: 50px; padding: 0 10px;" />
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="padding-left: 16px;">Phone Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+              <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                  <a href="index.php" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                  </li>
+              
+                  <li class="nav-item">
+                      <a href="form.php" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Register</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="shop.html" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Shop Now</a>
+                  </li>
+                 
+              </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="card-group">
+<div class="card" style="width: 18rem;">
+    <img src="Assests/images/iphone-12-family-select-2020.jpg" class="card-img-top" alt="Iphone" style="   max-width:50%;
+    max-height:50%;">
+    <div class="card-body">
+      <h5 class="card-title">iPhone 12</h5>
+      <p class="card-text">iPhone 12. 5G to download movies on the fly and stream high-quality video.1 Beautifully bright 6.1-inch Super Retina XDR display.2 Ceramic Shield with 4x better drop performance.3 Incredible low-light photography with Night mode on all cameras. Cinema-grade Dolby Vision video recording, editing, and playback. Powerful A14 Bionic chip. And new MagSafe accessories for easy attach and faster wireless charging.4 Let the fun begin.
+
+    </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Price: $799</b></li>
+      
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Add to cart</a>
+      
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="Assests/images/713N4SwTtKL._AC_SL1500_.jpg" class="card-img-top" alt="goole phone"  style="margin-top: 15px;   max-width:50%;
+    max-height:50%;">
+    <div class="card-body">
+      <h5 class="card-title">Google Pixel 4</h5>
+      <p class="card-text">The $699 Google Pixel 5 looks like a good phone on paper in North America, with brands like Realme and Xiaomi not a 
+          factor on the continent. But it still seems like a good purchase in general if you want a 5G phone with brisk updates and 
+          flagship-style features but don’t want to pay 2020 flagship money.
+
+    
+        In the case of the spec sheet, the Pixel 4 was arguably the least impressive flagship of 2019, packing a small battery and lacking a 
+        triple rear camera setup seen on rival phones. For the Pixel 5,
+        
+       
+    </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Price: $699</b></li>
+      
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Add to cart</a>
+      
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="Assests/images/413TUQ9XP9L._AC_.jpg" class="card-img-top" alt="Windows phone" style="margin-top: 60px;   max-width:50%;
+    max-height:50%;">
+    <div class="card-body">
+      <h5 class="card-title">Nokia Lumia 900</h5>
+      <p class="card-text">
+        The key word here is “high-performance,” rather than high-end. The Lumia 900 has a thoroughly middle-of-the-road spec — a
+         1.4GHz single-core Snapdragon S2 Scorpion (circa 2010!), 512MB of RAM, a 800×480 display, and 16GB of storage — but for Windows Phone 7
+         , that’s ample. A penta-band MDM9200 Qualcomm radio provides LTE coverage in the US, and good worldwide 3G coverage. The only stand-out
+          thpiece of hardware is the 8-megapixel, Carl Zeiss
+          
+    </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Price: $599</b></li>
+      
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Add to cart</a>
+      
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+       
+   
+    <footer class="border-top footer text-muted">
+        <div class="container3">
+            &copy; 2020 - Francisco Mesar - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+
+    </fieldset> 
+    </footer>
+    <script src="Assests/lib/jquery/dist/jquery.min.js"></script>
+    <script src="Assests/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assests/js/site.js"></script>
+    <script src="Assests/js/Retrieve_Data/GET_Users.js"></script>
+    <script src="Assests/js/Retrieve_Data/POST_Users.js"></script>
+</body>
+</html>
+
